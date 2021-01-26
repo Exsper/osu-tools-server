@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osu-tools-server", "osu-tools-server\osu-tools-server.csproj", "{86E59D0D-8E37-49F7-9C86-529EBFEDB5F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86E59D0D-8E37-49F7-9C86-529EBFEDB5F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86E59D0D-8E37-49F7-9C86-529EBFEDB5F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86E59D0D-8E37-49F7-9C86-529EBFEDB5F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86E59D0D-8E37-49F7-9C86-529EBFEDB5F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D997603-6BB0-4838-AD7A-548227539892}
+	EndGlobalSection
+EndGlobal
