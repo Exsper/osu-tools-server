@@ -49,6 +49,14 @@ namespace osu_tools_server
             else return DownloadBeatmap(bid, filepath);
         }
 
+        static string getBeatmapText(string bid)
+        {
+            string filepath = BEATMAP_FOLDER + bid + ".osu";
+            if (!File.Exists(filepath)) filepath = DownloadBeatmap(bid, filepath);
+            string fileData = File.ReadAllText(filepath);
+            return fileData;
+        }
+
         static string GetModsCommand(string mods)
         {
             int raw_mods = int.Parse(mods);
@@ -213,6 +221,12 @@ namespace osu_tools_server
                 string bid = urlquery.Get("id");
                 if (bid == null) throw new Exception("param id is necessary");
                 return GetBeatmapPath(bid);
+            }
+            if (urlpath == "/getBeatmapText")
+            {
+                string bid = urlquery.Get("id");
+                if (bid == null) throw new Exception("param id is necessary");
+                return getBeatmapText(bid);
             }
             else if (urlpath == "/cal")
             {
